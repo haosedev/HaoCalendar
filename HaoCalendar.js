@@ -1,7 +1,7 @@
 /*
  * HaoCalendar
  * 使用原生代码编写，不需要jquery等支持
- * Version:0.7.83
+ * Version:0.7.84
  */
 ;(function(options,undefined) {
     "use strict"  //使用js严格的模式检查，使语法更规范
