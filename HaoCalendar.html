@@ -5,14 +5,14 @@
     <title>HaoCalendar</title>
     <link rel="stylesheet" type="text/css" href="./HaoCalendar.css" />
     <style>
-        #calender{
+        #hcalender{
             width:600px;
         }
     </style>
 </head>
 <body>
 可以跟随变化：<input type="text" placeholder="请选择" readonly id="date1">
-<div id="calender"></div>
+<div id="hcalender"></div>
 <button onclick="clk();">查询选中日期</button>
 <button onclick="show();">显示</button>
 <button onclick="hide();">隐藏</button>
@@ -22,6 +22,7 @@
     var Cale;
     Cale=new HaoCalendar({
         //show:false,             //默认值为true，默认显示
+        contId:'hcalender',       //使用页面上的容器ID
         wrapId: 'HaoCalendar',  //日历容器id
         triggerId: 'date1',     //跟随变化的Input ID
         callback:function(ret){ //回调函数

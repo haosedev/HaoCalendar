@@ -1,7 +1,7 @@
 /*
  * HaoCalendar
  * 使用原生代码编写，不需要jquery等支持
- * Version:0.7.84
+ * Version:0.7.87
  */
 ;(function(options,undefined) {
     "use strict"  //使用js严格的模式检查，使语法更规范
@@ -268,7 +268,7 @@
                         '</div><div class="calendar-tit clear">' +
                         '<span>周日</span><span>周一</span><span>周二</span><span>周三</span><span>周四</span><span>周五</span><span>周六</span>' +
                         '</div><div class="calendar-main clear"></div>';
-                document.getElementById("calender").appendChild(Headdiv);
+                document.getElementById(opt.opts.contId).appendChild(Headdiv);
                 opt.oWrap = document.getElementById(opt.opts.wrapId);//日历容器
                 opt.trigger = document.getElementById(opt.opts.triggerId);//关联Input容器的
                 opt.oHeadDate = opt.oWrap.getElementsByClassName('calendar-date')[0];//头部日期
