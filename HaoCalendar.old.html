@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HaoCalendar</title>
+    <link rel="stylesheet" type="text/css" href="./HaoCalendar.css" />
+    <style>
+        #calender{
+            width:600px;
+        }
+    </style>
+</head>
+<body>
+可以跟随变化：<input type="text" placeholder="请选择" readonly id="date1">
+<div id="calender"></div>
+<button onclick="clk();">查询选中日期</button>
+<button onclick="show();">显示</button>
+<button onclick="hide();">隐藏</button>
+<script type="text/javascript" src="./HaoCalendar,old.js"></script>
+<script>
+    //        调用
+    var Cale;
+    Cale=HaoCalendar({
+        //show:false,             //默认值为true，默认显示
+        wrapId: 'HaoCalendar',  //日历容器id
+        triggerId: 'date1',     //跟随变化的Input ID
+        callback:function(ret){ //回调函数
+            console.log(ret);
+        }
+    });
+    function clk(){
+        console.log(Cale.getSel());
+    }
+    function show(){
+        Cale.show()
+    }
+    function hide(){
+        Cale.hide()
+    }
+</script>
+</body>
+</html>

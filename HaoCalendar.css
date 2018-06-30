@@ -1,0 +1,79 @@
+#HaoCalendar {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #FFF;
+    margin: auto;
+}
+.calendar-tit {
+    padding: 5px 10px;
+    margin: auto;
+    color: #FFF;
+    background-color:#005bac;
+}
+.calendar-tit span {
+    float: left;
+    width: 13.59%;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 2px;
+    font-weight: bold;
+}
+.calendar-main {
+    padding: 10px;
+    margin: auto;
+    background-color: #FFF;
+}
+.clear:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.calendar-main span {
+    width: 13.59%;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 2px;
+    float: left;
+    cursor: pointer;
+}
+.prev-date-normal, .next-date-normal {
+    background-color: #c5c5c5;
+}
+.calendar-hd {
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    padding:10px 0;
+}
+.calendar-prev, .calendar-next {
+    float:left;
+    width:20%;
+    background-color: #FFF;
+    border: 0;
+    font-weight: bold;
+}
+.calendar-prev-year, .calendar-next-year {
+    background-color: turquoise;
+    border: 0;
+    font-weight: bold;
+}
+.calendar-date {
+    width:60%;
+    float:left;
+}
+.date-normal {
+    background-color: #ffffff;
+}
+.calendar-sel {
+    background-color: yellowgreen !important;
+}
+.calendar-today{
+    background-color:#FFF;
+    color:red;
+}
