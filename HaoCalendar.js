@@ -1,7 +1,7 @@
 /*
  * HaoCalendar
  * 使用原生代码编写，不需要jquery等支持
- * Version:0.7.87
+ * Version:0.7.92
  */
 ;(function(options,undefined) {
     "use strict"  //使用js严格的模式检查，使语法更规范
@@ -97,7 +97,8 @@
                         }
                         var date=y + '-' + (m + 1) + '-' + this.innerHTML;
                         
-                        document.getElementById('date1').value = date;
+                        if (document.getElementById('date1'))
+                          document.getElementById('date1').value = date;
                         
                         //点击标记选中，并写入选中日期列表
                         var ret={};
@@ -303,9 +304,9 @@
                 //opt.oWrap.style.top = this.offset(opt.trigger).top + 'px';
                 opt.oWrap.style.display = 'none';//默认隐藏日历容器
                 //ipt触发日历选择
-                opt.trigger.onclick = function () {
-                    //opt.oWrap.style.display = 'none';   //点击日历后 是否隐藏
-                }
+                //opt.trigger.onclick = function () {
+                //    opt.oWrap.style.display = 'none';   //点击日历后 是否隐藏
+                //}
             }
         };
         
